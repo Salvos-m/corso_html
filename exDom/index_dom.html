@@ -20,13 +20,24 @@
         <div>Cognome: <input type="" name="cognome" id="cognome" maxlength="40"></div>
         <div>Nome: <input type="" name="nome" id="nome" maxlength="30"></div>
         <div>Matricola: <input type="" name="matricola" id="matricola"></div>
+        <div> regiove provenienza: 
+            <select name="regione provenienza" value="regione provenienzas" id="">
+            <option value="vuoto">seleziona</option>    
+            <option value="Lazio">Lazio</option>
+            <option value="sicilia">Sicilia</option>
+            <option value="Abruzzo">Abruzzo</option>
+            <option value="Toscana">Toscana</option>
+            <option value="Marche">Marche</option>
+            </select>
+        </div>
+        <div>email: <input type="" nome="email" id="email" maxlength="30"></div>
+        <div>telefono: <input type="" nome="telefono" id="telefono" maxlength="15"></div>
+        <div>
+            richiesta particolare: <textarea name="" id="" cols="60" maxlength="12"></textarea>
+        </div>
 
-        <div> 
-            <select name="regione provenienza" id=""></select>
-            <option value=""></option>
-
-
-            <input type="button" onclick="controllo()">
-    </form>
+        <input type="button" value="invia" onclick="controllo()">
+        <input type="reset" onclick="controllo()">
+     </form>
 </body>
 </html>
