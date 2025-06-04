@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Giorno della Settimana</title>
+</head>
+<body>
+    <h1>Scopri il Giorno della Settimana</h1>
+    
+    <label for="dayInput">Inserisci un numero da 1 a 7:</label>
+    <input type="number" id="dayInput" min="1" max="7">
+    <button onclick="printDay()">Verifica</button>
+
+    <p id="output"></p>
+
+    <script>
+        // Funzione 1: verifica se il numero è compreso tra 1 e 7
+        function isValidDayNumber(num) {
+            return num >= 1 && num <= 7;
+        }
+
+        // Funzione 2: stampa il giorno della settimana oppure un messaggio di errore
+        function printDay() {
+            const num = parseInt(document.getElementById("dayInput").value);
+            const output = document.getElementById("output");
+
+            if (isValidDayNumber(num)) {
+                const giorniSettimana = [
+                    "Lunedì", "Martedì", "Mercoledì", "Giovedì", 
+                    "Venerdì", "Sabato", "Domenica"
+                ];
+                output.textContent = "Il giorno corrispondente è: " + giorniSettimana[num - 1];
+            } else {
+                output.textContent = "Peccato, non posso indovinare il giorno.";
+            }
+        }
+    </script>
+</body>
+</html>

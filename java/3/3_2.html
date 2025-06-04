@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>ex 2</h3>
+    <p id="messaggio"></p>
+    <script>
+        // Scrivere un programma che dichiara e valorizza una 
+        // variabile con l'anno corrente e un’altra variabile con 
+        // il proprio anno di nascita e determini:
+        //      l’età  della persona
+        //      quanti anni sono necessari per raggiungere i 100
+        //Restituisca in output entrambi i risultati
+
+        let anno_corrente=2025
+        let anno_nascira= 2004
+
+        let eta= anno_corrente-anno_nascira
+        let secolo= 100-eta
+
+        let messaggio= "hai "+ eta + " anni e mancano "+ secolo +" anni prima che tu arrtivi a 100"
+
+        console.log(messaggio)
+        document.getElementById("messaggio").innerHTML= messaggio
+    </script>
+</body>
+</html>
