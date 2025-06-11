@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- teoria-->
+    <script src="codice.js"></script> <!-- per importare un file js-->
+
+    <script>// usa lomscript per mettere codice js in un file html
+        // può essere sia in body che in head
+
+    var nome="marco"; //var usaton per dichiarare che è una variabile
+                      // il ";" usato per concludere un comando, ma non obbligatorio
+   
+    console.log(nome); // per vedere nella console 
+
+    </script>
+
+
+
+
+
+    <!--esrcizi-->
+    <h2>ex1</h2>
+    <p id="ex1"></p>
+    <script>
+        //ex1-1
+        nome="salvatore";
+        console.log("ciao "+nome)//lato server
+        frase="ciao "+ nome
+        document.getElementById("ex1").innerHTML = frase;
+        document.write("ciao "+nome)//lato client
+    </script>
+
+    <h2>ex2</h2>
+    <p id="ri">valore iniziale: </p>
+    <p id="rf">valore finale: </p>
+
+    <script>
+        //ex-2
+        var valore_iniziale=100;
+        var frase1="valore iniziale: "+valore_iniziale
+        document.getElementById("ri").innerHTML=frase1
+
+        var valore_iniziale=70;
+        var frase2="valore iniziale: "+valore_iniziale
+        document.getElementById("rf").innerHTML=frase2
+     </script>
+
+    <h2>ex3</h2>
+    <p id="x"></p>
+    <p id="y"></p>
+    <p id="y"></p>
+    <p id="z"></p>
+
+    <script>
+        //ex3
+        var x=10
+        var y
+        var y=x
+        var z="marco"
+
+        document.getElementById("x").innerHTML=(x + typeof(x))
+        document.getElementById("y").innerHTML=(y + typeof(y))
+        document.getElementById("y").innerHTML=(x + typeof(y))
+        document.getElementById("z").innerHTML=(z + typeof(z))
+
+    </script>
+
+
+</body>
+</html>
