@@ -8,7 +8,70 @@
 <body>
     <script>
         //istruzioni condizionali if e switch
-        
+    /* 
+        ---if---
+    if(condizione){
+        istruzioni
+    }else if(condizione){
+        isctruzione
+    }else{
+        istruzioni
+    }
+    
+        ---switch---
+    switch(espressione){
+        case espressione1:
+        istruzione1;
+        breack;
+        case espressione2:
+        istruzione2;
+        breack;
+        default:
+        istruzione;
+        breack;
+    }
+    */
+
+
+        //iterazioni con do-while e while e for
+    /*
+        ---while---
+    while(condizione){
+        istruzione
+    }
+
+        ---do while---      //svolge il codice almeno una volta
+    do{
+        istruzione
+        }
+    while(condizione)
+
+        ---for---
+    for(iniizializzazione; condizione; modifica){
+        istruzione
+    }
+
+    iniizializzazione-> 
+    condizione-> se vera parte il ciclo
+    modifica-> istruzione eseguita al permine di ogni ciclo
+    
+        ---for in--- e ---for of---
+    
+    */
+    </script>
+
+    <h2>ex4.1</h2>
+    <p id="m"></p>
+    <script>
+        var numero=prompt("metti numero da 1 a 10: ")
+        var n=parseInt(numero)
+
+        for(counter=0;counter<11;counter++){
+            var m=n*counter
+            var frase=n+"x"+counter+"="+m
+            document.getElementById("m").innerHTML=frase
+            document.write=frase
+        }
     </script>
 </body>
 </html>
